@@ -1,0 +1,197 @@
+/* General Styles */
+/* General Styles */
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #343a40;
+    color: #ffc107;
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    color: #ffc107;
+    margin-right: 20px;
+}
+
+.navbar-nav .nav-link {
+    color: #ffc107;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107;
+}
+
+/* Search Container Styles */
+.form-group {
+    display: flex;
+    align-items: center;
+}
+
+#searchInput {
+    padding: 10px 20px;
+    margin-right: 10px;
+    margin-left: 100px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    color: #333;
+    
+}
+
+#searchButton {
+    padding: 10px px;
+    background-color: #ffc107;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#searchButton:hover {
+    background-color: #a98004;
+}
+
+
+
+/* Movies Container Styles */
+.movie-card {
+    color: #fff;
+    padding: 20px; /* Adjust padding to reduce the size of the card */
+    text-align: center;
+    border-radius: 10px; /* Increased border radius for smoother edges */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 200px; /* Set a fixed height for the card */
+    margin-bottom: 20px; /* Add margin between cards */
+}
+
+/* Adjust margin between cards */
+.movies-container {
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: repeat(fit, minmax(200px, 1fr));
+    gap: 20px; /* Added gap between cards */
+    padding: 20px; /* Padding around the container */
+    margin: 0;
+}
+.movie-card img {
+    max-width: 100%;
+    max-height: 100px; /* Reduced max height of the image */
+    object-fit: cover;
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+}
+
+/* Updated button styles */
+button {
+    padding: 8px 16px;
+    background-color: #ffc107; /* Yellow background color */
+    color: #343a40; /* Dark text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-right: 5px; /* Add margin to separate buttons */
+    flex: 1; /* Make buttons flexible to occupy equal space */
+}
+
+button:hover {
+    background-color: #ffca28; /* Lighter yellow on hover */
+}
+
+@media (max-width: 768px) {
+    .movies-container {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjusted min width for smaller screens */
+        gap: 10px; /* Reduced gap for smaller screens */
+    }
+
+    .movie-card img {
+        max-height: 80px; /* Reduced max height of the image for smaller screens */
+    }
+}
+
+.container{
+    display: flex;
+}
+
+/* Favourites List Styles */
+#favouritesList .card {
+    background-color: #fff; /* Set background color to white */
+    color: #343a40; /* Adjusted text color */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#favouritesList .card-img-top {
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+#favouritesList .card-body {
+    padding: 10px;
+}
+
+#favouritesList .card-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#favouritesList .more-button {
+    margin-top: 10px;
+}
+
+
+/* Button Styles */
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#favouritesList h1 {
+    text-align: center; /* Align heading to center */
+    margin-bottom: 20px; /* Add margin below the heading */
+}
+#movieDetails {
+    margin-top: 50px;
+}
+
+#movieDetails h2 {
+    color: #343a40;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 14px;
+    }
+}
